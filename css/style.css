@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+}
+
+.background {
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advice-container {
+    width: 50%;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.advice-nr {
+    color: hsl(150, 100%, 66%);
+    font-weight: bold;
+    font-size: 0.5rem;
+    letter-spacing: 3px;
+}
+
+.advice {
+    font-size: 1rem;
+    color: hsl(193, 38%, 86%);
+    padding: 2rem 1rem;
+}
+
+.style-img {
+    width: 100%;
+}
+
+.button-next{
+    position: relative;
+    top: 3.5rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-next:hover {
+    box-shadow: 0px 0px 4px hsl(150, 100%, 66%);
+}
+
+.button-next img {
+    width: 1rem;
+}
+
+@media (max-width: 376px) {
+    .advice-container {
+        width: 90%;
+        background-color: hsl(217, 19%, 24%);
+        border-radius: 0.5rem;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .button-next{
+        width: 3rem;
+        height: 3rem;
+        align-items: center;
+        position: relative;
+        top: 3.5rem;
+    }
+
+    .button-next img {
+        width: 1rem;
+    }
+
+}
