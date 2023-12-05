@@ -1,20 +1,19 @@
-// Funktion, um einen zufälligen Ratschlag abzurufen
 function getRandomAdvice() {
     // API-URL
     const apiUrl = "https://api.adviceslip.com/advice";
 
-    // Führe die GET-Anfrage durch
+    // GET-Anfrage
     fetch(apiUrl)
         .then(response => {
-            // Überprüfe, ob die Anfrage erfolgreich war (Statuscode 200)
+            // Überprüfung ob erfolgreich (Statuscode 200)
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
-            // Konvertiere die Antwort in JSON
+            // Konvertiere Antwort in JSON
             return response.json();
         })
         .then(data => {
-            // Zeige den zufälligen Ratschlag an
+            // Ratschlag anzeigen
             const advice = data.slip.advice;
             const id = data.slip.id;
 
