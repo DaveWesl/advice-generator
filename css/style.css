@@ -67,13 +67,20 @@ body {
     width: 1rem;
 }
 
+
+@media (max-width: 650px) {
+    .advice-container {
+        width: 90%;
+    }
+}
+
 @media (max-width: 376px) {
     .advice-container {
         width: 90%;
         background-color: hsl(217, 19%, 24%);
         border-radius: 0.5rem;
         text-align: center;
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .button-next{
